@@ -232,6 +232,11 @@ details p{padding:0 0 22px;color:var(--muted);max-width:62ch}
 footer{background:var(--band);color:var(--band-muted);border-top:1px solid var(--band-line)}
 footer .wrap{padding-block:24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:14px}
 
+.wa-float{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:40;display:flex;align-items:center;gap:10px;background:#25D366;color:#0B2E17;font:700 15px/1 var(--body);text-decoration:none;padding:14px 18px;border-radius:999px;box-shadow:0 10px 30px rgba(0,0,0,.25);transition:transform .2s ease}
+.wa-float:hover{transform:translateY(-2px)}
+.wa-float svg{width:22px;height:22px;flex:none}
+.btn.wa{background:#25D366;border-color:#25D366;color:#0B2E17}
+@media (max-width:520px){.wa-float span{display:none}.wa-float{padding:14px}}
 @media (max-width:900px){
   nav{display:none}
   .head,.quiz,.about,.faq,.contact-grid{grid-template-columns:minmax(0,1fr)}
@@ -420,6 +425,7 @@ footer .wrap{padding-block:24px;display:flex;justify-content:space-between;gap:1
           <p class="msg" id="r-msg"></p>
           <div class="row">
             <button class="btn sun" type="button" id="r-copy">Copiar mensagem</button>
+            <a class="btn wa" id="r-wa" href="https://wa.me/5571982440983" target="_blank" rel="noopener">Enviar no WhatsApp</a>
             <a class="btn" id="r-mail" href="#contato">Enviar por e-mail</a>
           </div>
           <p class="status" id="r-status"></p>
@@ -482,7 +488,10 @@ footer .wrap{padding-block:24px;display:flex;justify-content:space-between;gap:1
       <div class="contact-grid">
         <p>Conte o que sua empresa faz e o que você espera do site. A resposta vem com os próximos passos e uma ideia de prazo.</p>
         <div class="mail">
-          <p class="eyebrow">E-mail para orçamento</p>
+          <p class="eyebrow">WhatsApp</p>
+          <p class="addr">(71) 98244-0983</p>
+          <div class="row"><a class="btn wa" href="https://wa.me/5571982440983?text=Ol%C3%A1!%20Vi%20o%20site%20da%20Vontex%20Global%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">Chamar no WhatsApp</a></div>
+          <p class="eyebrow" style="margin-top:10px">E-mail para orçamento</p>
           <p class="addr" id="addr">falecomdiogoreis@gmail.com</p>
           <div class="row">
             <button class="btn sun" type="button" id="copy">Copiar e-mail</button>
@@ -494,6 +503,8 @@ footer .wrap{padding-block:24px;display:flex;justify-content:space-between;gap:1
     </div>
   </section>
 </main>
+
+<a class="wa-float" href="https://wa.me/5571982440983?text=Ol%C3%A1!%20Vi%20o%20site%20da%20Vontex%20Global%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Chamar a Vontex Global no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H10l-5 4v-4H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm3 6.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm5 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm5 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg><span>Fale no WhatsApp</span></a>
 
 <footer>
   <div class="wrap">
@@ -555,6 +566,7 @@ footer .wrap{padding-block:24px;display:flex;justify-content:space-between;gap:1
     var text='Olá! Fiz o diagnóstico no site da Vontex Global. Tenho '+neg+', hoje vendo '+can+' e quero '+goal+'. A recomendação foi "'+p.t+'". Podemos conversar?';
     msg.textContent=text;
     mail.href='mailto:'+EMAIL+'?subject='+encodeURIComponent('Diagnóstico: '+p.t)+'&body='+encodeURIComponent(text);
+    document.getElementById('r-wa').href='https://wa.me/5571982440983?text='+encodeURIComponent(text);
     rstat.textContent='';
   }
   form.addEventListener('change',update);
