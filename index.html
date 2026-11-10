@@ -232,11 +232,6 @@ details p{padding:0 0 22px;color:var(--muted);max-width:62ch}
 footer{background:var(--band);color:var(--band-muted);border-top:1px solid var(--band-line)}
 footer .wrap{padding-block:24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:14px}
 
-.wa-float{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:40;display:flex;align-items:center;gap:10px;background:#25D366;color:#0B2E17;font:700 15px/1 var(--body);text-decoration:none;padding:14px 18px;border-radius:999px;box-shadow:0 10px 30px rgba(0,0,0,.25);transition:transform .2s ease}
-.wa-float:hover{transform:translateY(-2px)}
-.wa-float svg{width:22px;height:22px;flex:none}
-.btn.wa{background:#25D366;border-color:#25D366;color:#0B2E17}
-@media (max-width:520px){.wa-float span{display:none}.wa-float{padding:14px}}
 @media (max-width:900px){
   nav{display:none}
   .head,.quiz,.about,.faq,.contact-grid{grid-template-columns:minmax(0,1fr)}
@@ -278,6 +273,7 @@ footer .wrap{padding-block:24px;display:flex;justify-content:space-between;gap:1
     </a>
     <nav aria-label="Seções">
       <a href="#servicos">Serviços</a>
+      <a href="trafego-pago.html">Tráfego pago</a>
       <a href="#antes-depois">Antes e depois</a>
       <a href="#processo">Processo</a>
       <a href="#sobre">Sobre</a>
@@ -310,8 +306,8 @@ footer .wrap{padding-block:24px;display:flex;justify-content:space-between;gap:1
 
   <div class="marquee" aria-hidden="true" style="margin-top:56px">
     <div class="track">
-      <span>Sites institucionais<i>✦</i>Lojas virtuais<i>✦</i>Páginas de venda<i>✦</i>Google da sua cidade<i>✦</i>Atendimento com IA<i>✦</i>Manutenção mensal<i>✦</i></span>
-      <span>Sites institucionais<i>✦</i>Lojas virtuais<i>✦</i>Páginas de venda<i>✦</i>Google da sua cidade<i>✦</i>Atendimento com IA<i>✦</i>Manutenção mensal<i>✦</i></span>
+      <span>Sites institucionais<i>✦</i>Lojas virtuais<i>✦</i>Páginas de venda<i>✦</i>Google da sua cidade<i>✦</i>Anúncios no Instagram<i>✦</i>Atendimento com IA<i>✦</i>Manutenção mensal<i>✦</i></span>
+      <span>Sites institucionais<i>✦</i>Lojas virtuais<i>✦</i>Páginas de venda<i>✦</i>Google da sua cidade<i>✦</i>Anúncios no Instagram<i>✦</i>Atendimento com IA<i>✦</i>Manutenção mensal<i>✦</i></span>
     </div>
   </div>
 
@@ -378,6 +374,7 @@ footer .wrap{padding-block:24px;display:flex;justify-content:space-between;gap:1
         <div class="svc"><h3>Loja virtual</h3><p>Catálogo, carrinho, frete e pagamento por Pix e cartão, com os produtos já cadastrados para você começar a vender.</p><p class="for"><b>Ideal para</b>comércio que quer vender além do balcão</p></div>
         <div class="svc"><h3>Página de vendas</h3><p>Uma página, uma oferta e um objetivo. Para lançamento, promoção ou captação de contatos vindos de anúncio.</p><p class="for"><b>Ideal para</b>campanhas no Instagram e no Google</p></div>
         <div class="svc"><h3>Google da sua cidade</h3><p>Perfil de Empresa no Google configurado e páginas preparadas para buscas como "depósito de material em Camaçari".</p><p class="for"><b>Ideal para</b>negócios que atendem a região</p></div>
+        <div class="svc"><h3><a href="trafego-pago.html" style="text-decoration:none">Tráfego pago →</a></h3><p>Anúncios no Instagram e no Facebook que levam o cliente direto para o seu WhatsApp, com triagem automática e relatório semanal.</p><p class="for"><b>Ideal para</b>quem quer mais clientes chamando todo dia</p></div>
         <div class="svc"><h3>Atendimento com IA</h3><p>Assistente que responde as dúvidas mais comuns a qualquer hora e entrega o cliente pronto para fechar.</p><p class="for"><b>Ideal para</b>quem perde venda por demorar a responder</p></div>
         <div class="svc"><h3>Manutenção mensal</h3><p>Atualização de preços, banners e campanhas todo mês, com o site sempre no ar e funcionando.</p><p class="for"><b>Ideal para</b>quem não tem tempo de cuidar do site</p></div>
       </div>
@@ -425,7 +422,6 @@ footer .wrap{padding-block:24px;display:flex;justify-content:space-between;gap:1
           <p class="msg" id="r-msg"></p>
           <div class="row">
             <button class="btn sun" type="button" id="r-copy">Copiar mensagem</button>
-            <a class="btn wa" id="r-wa" href="https://wa.me/5571982440983" target="_blank" rel="noopener">Enviar no WhatsApp</a>
             <a class="btn" id="r-mail" href="#contato">Enviar por e-mail</a>
           </div>
           <p class="status" id="r-status"></p>
@@ -488,10 +484,7 @@ footer .wrap{padding-block:24px;display:flex;justify-content:space-between;gap:1
       <div class="contact-grid">
         <p>Conte o que sua empresa faz e o que você espera do site. A resposta vem com os próximos passos e uma ideia de prazo.</p>
         <div class="mail">
-          <p class="eyebrow">WhatsApp</p>
-          <p class="addr">(71) 98244-0983</p>
-          <div class="row"><a class="btn wa" href="https://wa.me/5571982440983?text=Ol%C3%A1!%20Vi%20o%20site%20da%20Vontex%20Global%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">Chamar no WhatsApp</a></div>
-          <p class="eyebrow" style="margin-top:10px">E-mail para orçamento</p>
+          <p class="eyebrow">E-mail para orçamento</p>
           <p class="addr" id="addr">falecomdiogoreis@gmail.com</p>
           <div class="row">
             <button class="btn sun" type="button" id="copy">Copiar e-mail</button>
@@ -504,12 +497,10 @@ footer .wrap{padding-block:24px;display:flex;justify-content:space-between;gap:1
   </section>
 </main>
 
-<a class="wa-float" href="https://wa.me/5571982440983?text=Ol%C3%A1!%20Vi%20o%20site%20da%20Vontex%20Global%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Chamar a Vontex Global no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H10l-5 4v-4H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm3 6.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm5 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm5 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg><span>Fale no WhatsApp</span></a>
-
 <footer>
   <div class="wrap">
     <span>© 2026 Vontex Global · Camaçari, Bahia, Brasil</span>
-    <span>Sites, lojas virtuais e atendimento com IA</span>
+    <span>Sites, lojas virtuais, <a href="trafego-pago.html" style="color:var(--band-fg)">tráfego pago</a> e atendimento com IA</span>
   </div>
 </footer>
 
@@ -566,7 +557,6 @@ footer .wrap{padding-block:24px;display:flex;justify-content:space-between;gap:1
     var text='Olá! Fiz o diagnóstico no site da Vontex Global. Tenho '+neg+', hoje vendo '+can+' e quero '+goal+'. A recomendação foi "'+p.t+'". Podemos conversar?';
     msg.textContent=text;
     mail.href='mailto:'+EMAIL+'?subject='+encodeURIComponent('Diagnóstico: '+p.t)+'&body='+encodeURIComponent(text);
-    document.getElementById('r-wa').href='https://wa.me/5571982440983?text='+encodeURIComponent(text);
     rstat.textContent='';
   }
   form.addEventListener('change',update);

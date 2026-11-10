@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Tráfego pago · Vontex Global</title>
+<meta name="description" content="Anúncios no Instagram e no Facebook que levam clientes direto para o seu WhatsApp. Gestão de tráfego pago da Vontex Global, com campanhas para escritórios de advocacia dentro das regras da OAB.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root{
+  --bg:#F1F3F5; --paper:#FFFFFF; --ink:#111C24; --muted:#52616B; --line:#D3DAE0;
+  --accent:#2848D8; --accent-2:#1A33A8; --on-accent:#FFFFFF; --sun:#F2B705; --on-sun:#111C24;
+  --band:#111C24; --band-fg:#EEF2F5; --band-muted:#9FB0BC; --band-line:#2A3943;
+  --wa:#25D366; --on-wa:#0B2614;
+  --display:"Archivo","Arial Narrow",Arial,sans-serif;
+  --body:"Instrument Sans","Segoe UI",Roboto,Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0C1318; --paper:#131D24; --ink:#E6ECF0; --muted:#9AABB6; --line:#24323B;
+  --accent:#7D96FF; --accent-2:#A9B9FF; --on-accent:#0C1318; --sun:#F4C43A; --on-sun:#111C24;
+  --band:#18252E; --band-fg:#EEF2F5; --band-muted:#9FB0BC; --band-line:#2E3E49; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0C1318; --paper:#131D24; --ink:#E6ECF0; --muted:#9AABB6; --line:#24323B;
+  --accent:#7D96FF; --accent-2:#A9B9FF; --on-accent:#0C1318; --sun:#F4C43A; --on-sun:#111C24;
+  --band:#18252E; --band-fg:#EEF2F5; --band-muted:#9FB0BC; --band-line:#2E3E49; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;overflow-x:hidden}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1;text-wrap:balance}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 24px;border-radius:999px;font:600 16px/1 var(--body);text-decoration:none;border:2px solid var(--ink);color:var(--ink);background:transparent;cursor:pointer;transition:transform .2s ease,background .2s ease,color .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn .arr{transition:transform .2s ease}
+.btn:hover .arr{transform:translateX(4px)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.btn.sun{background:var(--sun);border-color:var(--sun);color:var(--on-sun)}
+.btn.wa{background:var(--wa);border-color:var(--wa);color:var(--on-wa)}
+.btn svg{flex:none}
+
+/* topo */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand b{font-family:var(--display);font-stretch:125%;font-weight:850;letter-spacing:.05em;font-size:17px}
+.brand b span{color:var(--accent)}
+nav{display:flex;gap:26px}
+nav a{text-decoration:none;color:var(--muted);font-weight:500;font-size:15px}
+nav a:hover,nav a[aria-current="page"]{color:var(--ink)}
+header .btn{padding:11px 18px;font-size:14.5px}
+
+/* hero */
+.hero .wrap{padding-block:64px 40px}
+.hero h1{font-size:clamp(42px,7.8vw,108px);font-stretch:125%;font-weight:900;letter-spacing:-.02em;line-height:.95;max-width:12ch}
+.hl{position:relative;white-space:nowrap;z-index:0}
+.hl::after{content:"";position:absolute;left:-.04em;right:-.04em;bottom:.04em;height:.2em;background:var(--sun);z-index:-1;transform-origin:left;animation:swipe 1s .3s cubic-bezier(.2,.8,.2,1) both}
+@keyframes swipe{from{transform:scaleX(.05)}to{transform:scaleX(1)}}
+.hero-foot{margin-top:44px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,380px);gap:40px;align-items:end}
+.hero .lead{max-width:54ch;font-size:19px;color:var(--muted)}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+
+/* funil do hero */
+.funnel{list-style:none;margin:0;padding:22px;border-radius:18px;background:var(--band);color:var(--band-fg);display:flex;flex-direction:column;gap:8px}
+.funnel .eyebrow{color:var(--band-muted);margin-bottom:6px}
+.funnel li{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 16px;border-radius:10px;background:color-mix(in srgb,var(--band-fg) 7%,transparent);font-weight:600;font-size:15.5px;transform-origin:left;animation:grow .7s cubic-bezier(.2,.8,.2,1) both}
+.funnel li span{font:500 11.5px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--band-muted)}
+.funnel li:nth-child(2){width:100%;animation-delay:.15s}
+.funnel li:nth-child(3){width:88%;animation-delay:.3s}
+.funnel li:nth-child(4){width:76%;animation-delay:.45s}
+.funnel li:nth-child(5){width:64%;animation-delay:.6s;background:var(--sun);color:var(--on-sun)}
+.funnel li:nth-child(5) span{color:var(--on-sun);opacity:.75}
+@keyframes grow{from{opacity:0;transform:scaleX(.6)}to{opacity:1;transform:scaleX(1)}}
+
+/* faixa letreiro */
+.marquee{background:var(--accent);color:var(--on-accent);overflow:hidden;border-block:1px solid var(--accent-2)}
+.marquee .track{display:flex;width:max-content;animation:slide 30s linear infinite}
+.marquee span{font-family:var(--display);font-stretch:125%;font-weight:800;font-size:clamp(20px,2.6vw,30px);padding:18px 0;white-space:nowrap}
+.marquee span i{font-style:normal;color:var(--sun);padding:0 .7em}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+section{padding-block:96px}
+.head{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:40px;align-items:end;margin-bottom:48px}
+.head h2{font-size:clamp(34px,5vw,64px);font-stretch:118%;font-weight:850;letter-spacing:-.01em}
+.head p{color:var(--muted);max-width:56ch}
+
+/* manifesto */
+.manifesto h2{font-size:clamp(34px,5.6vw,74px);font-stretch:118%;font-weight:850;letter-spacing:-.015em;max-width:17ch}
+.manifesto h2 em{font-style:normal;color:var(--muted)}
+.pillars{margin-top:56px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:2px solid var(--ink)}
+.pillar{padding:26px 26px 6px 0;display:flex;flex-direction:column;gap:10px}
+.pillar+.pillar{padding-left:26px;border-left:1px solid var(--line)}
+.pillar .big{font-family:var(--display);font-stretch:125%;font-weight:900;font-size:clamp(36px,4.4vw,54px);line-height:1;color:var(--accent)}
+.pillar h3{font-size:21px;font-stretch:112%;font-weight:750}
+.pillar p{color:var(--muted);font-size:16px}
+
+/* para quem */
+.svc-list{border-top:2px solid var(--ink)}
+.svc{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.4fr) minmax(0,.9fr);gap:28px;padding:30px 0;border-bottom:1px solid var(--line);align-items:baseline;transition:padding .25s ease}
+.svc h3{font-size:clamp(24px,2.8vw,36px);font-stretch:118%;font-weight:800;transition:color .2s ease}
+.svc p{color:var(--muted)}
+.svc .for{font-size:14px;color:var(--muted)}
+.svc .for b{display:block;font:500 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink);margin-bottom:4px}
+.svc:hover h3{color:var(--accent)}
+.svc:hover{padding-left:14px}
+
+/* advocacia */
+.band{background:var(--band);color:var(--band-fg)}
+.band .head p,.band .eyebrow{color:var(--band-muted)}
+.rules{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.rule{border:1px solid var(--band-line);border-radius:18px;padding:26px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.rule h3{font-size:24px;font-stretch:118%;font-weight:800;display:flex;align-items:center;gap:12px}
+.rule h3 i{font-style:normal;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font:700 17px/1 var(--body);flex:none}
+.rule.no h3 i{background:#3A2A2A;color:#FF9B8F}
+.rule.yes h3 i{background:var(--sun);color:var(--on-sun)}
+.rule ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column}
+.rule li{padding:12px 0;border-top:1px solid var(--band-line);color:var(--band-fg)}
+.rule li small{display:block;color:var(--band-muted);font-size:14px}
+.rule.no li{color:var(--band-muted);text-decoration:line-through;text-decoration-color:color-mix(in srgb,#FF9B8F 70%,transparent);text-decoration-thickness:2px}
+.law{margin-top:22px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;align-items:start;padding:20px 22px;border-radius:14px;background:color-mix(in srgb,var(--band-fg) 6%,transparent)}
+.law b{font:900 26px/1 var(--display);font-stretch:118%;color:var(--sun)}
+.law p{color:var(--band-muted);font-size:15.5px}
+.law p strong{color:var(--band-fg);font-weight:600}
+
+/* processo */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;counter-reset:e}
+.steps li{counter-increment:e;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:24px;display:flex;flex-direction:column;gap:10px}
+.steps li::before{content:counter(e,decimal-leading-zero);font-family:var(--display);font-stretch:125%;font-weight:900;font-size:56px;line-height:1;color:var(--accent)}
+.steps h3{font-size:24px;font-stretch:118%;font-weight:800}
+.steps p{color:var(--muted);font-size:16px}
+.steps .out{margin-top:auto;padding-top:12px;border-top:1px dashed var(--line);font:500 12px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+
+/* relatório */
+.diag{background:var(--paper);border-block:1px solid var(--line)}
+.report{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:2px solid var(--ink)}
+.metric{padding:24px 20px 8px 0;display:flex;flex-direction:column;gap:8px;position:relative}
+.metric+.metric{padding-left:20px;border-left:1px solid var(--line)}
+.metric .n{font:500 12px var(--mono);letter-spacing:.08em;color:var(--accent)}
+.metric h3{font-size:22px;font-stretch:112%;font-weight:800}
+.metric p{color:var(--muted);font-size:15px}
+.metric.key h3{color:var(--accent)}
+.included{margin-top:48px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.included div{border:1px solid var(--line);border-radius:14px;padding:18px 20px;background:var(--bg);font-weight:600}
+.included div small{display:block;font-weight:400;color:var(--muted);font-size:14.5px;margin-top:4px}
+
+/* montar mensagem */
+.quiz{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:28px;align-items:start}
+.q{border:1px solid var(--line);border-radius:18px;padding:26px;background:var(--paper)}
+.q+.q{margin-top:16px}
+.q legend{font-family:var(--display);font-stretch:112%;font-weight:800;font-size:21px;padding:0;margin-bottom:14px;display:flex;gap:12px;align-items:baseline}
+.q legend span{font:500 12px var(--mono);letter-spacing:.08em;color:var(--accent)}
+fieldset{margin:0;min-width:0}
+.opts{display:flex;flex-wrap:wrap;gap:10px}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;width:1px;height:1px}
+.opt label{display:inline-block;padding:10px 16px;border-radius:999px;border:1.5px solid var(--line);background:var(--bg);font-weight:500;font-size:15px;cursor:pointer;transition:all .15s ease}
+.opt label:hover{border-color:var(--accent)}
+.opt input:checked+label{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.opt input:focus-visible+label{outline:3px solid var(--sun);outline-offset:2px}
+.result{position:sticky;top:96px;border-radius:18px;background:var(--accent);color:var(--on-accent);padding:28px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.result .eyebrow{color:inherit;opacity:.8}
+.result h3{font-size:clamp(26px,2.8vw,34px);font-stretch:118%;font-weight:850}
+.result .msg{background:color-mix(in srgb,var(--on-accent) 12%,transparent);border-radius:12px;padding:14px;font-size:14.5px;line-height:1.5;white-space:pre-wrap}
+.result .row{display:flex;gap:10px;flex-wrap:wrap}
+.result .btn{border-color:var(--on-accent);color:var(--on-accent);padding:12px 18px;font-size:15px}
+.result .btn.wa{border-color:var(--wa);color:var(--on-wa)}
+.status{font-size:14px;min-height:1.3em}
+
+/* faq */
+.faq{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:48px}
+.faq h2{font-size:clamp(34px,4.6vw,58px);font-stretch:118%;font-weight:850}
+details{border-bottom:1px solid var(--line)}
+details:first-child{border-top:2px solid var(--ink)}
+summary{list-style:none;cursor:pointer;padding:22px 0;display:flex;justify-content:space-between;gap:16px;font-weight:600;font-size:18px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:700 26px/1 var(--display);color:var(--accent);transition:transform .2s ease}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 0 22px;color:var(--muted);max-width:62ch}
+
+/* contato */
+.contact{background:var(--band);color:var(--band-fg);overflow:hidden}
+.contact .wrap{padding-block:104px}
+.contact h2{font-size:clamp(44px,8.4vw,120px);font-stretch:125%;font-weight:900;letter-spacing:-.02em;line-height:.92}
+.contact h2 span{color:var(--sun)}
+.contact-grid{margin-top:44px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:end}
+.contact p{color:var(--band-muted);max-width:50ch}
+.mail{border:1px solid var(--band-line);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.mail .eyebrow{color:var(--band-muted)}
+.mail .addr{font-size:clamp(17px,2.2vw,22px);font-weight:700;word-break:break-all}
+.mail .row{display:flex;gap:10px;flex-wrap:wrap}
+.contact .btn{border-color:var(--band-fg);color:var(--band-fg)}
+.contact .btn.wa{border-color:var(--wa);color:var(--on-wa)}
+
+footer{background:var(--band);color:var(--band-muted);border-top:1px solid var(--band-line)}
+footer .wrap{padding-block:24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:14px}
+footer a{color:var(--band-fg)}
+
+@media (max-width:900px){
+  nav{display:none}
+  .head,.quiz,.faq,.contact-grid,.hero-foot,.rules{grid-template-columns:minmax(0,1fr)}
+  .pillars{grid-template-columns:minmax(0,1fr)}
+  .pillar,.pillar+.pillar{padding:22px 0;border-left:0;border-bottom:1px solid var(--line)}
+  .svc{grid-template-columns:minmax(0,1fr);gap:8px}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .report{grid-template-columns:minmax(0,1fr)}
+  .metric,.metric+.metric{padding:18px 0;border-left:0;border-bottom:1px solid var(--line)}
+  .included{grid-template-columns:minmax(0,1fr)}
+  .result{position:static}
+  section{padding-block:72px}
+}
+@media (max-width:520px){
+  .steps{grid-template-columns:minmax(0,1fr)}
+  .hero .wrap{padding-block:44px 32px}
+  header .btn{display:none}
+  .law{grid-template-columns:minmax(0,1fr)}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Vontex Global, página inicial">
+      <svg width="32" height="32" viewBox="190 100 380 390" aria-hidden="true"><polygon points="460,110 560,110 430,480 330,480" fill="currentColor"/><polygon points="200,110 300,110 430,480 330,480" fill="var(--accent)"/><rect x="350" y="110" width="60" height="60" fill="var(--sun)"/></svg>
+      <b>VONTEX <span>GLOBAL</span></b>
+    </a>
+    <nav aria-label="Seções">
+      <a href="index.html#servicos">Sites</a>
+      <a href="trafego-pago.html" aria-current="page">Tráfego pago</a>
+      <a href="#advocacia">Advocacia</a>
+      <a href="#processo">Como funciona</a>
+    </nav>
+    <a class="btn wa js-wa" href="https://wa.me/5571982440983" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding:0">
+    <div class="wrap">
+      <p class="eyebrow">Tráfego pago · Instagram e Facebook</p>
+      <h1 style="margin-top:18px">Anúncio que termina no seu <span class="hl">WhatsApp.</span></h1>
+      <div class="hero-foot">
+        <div>
+          <p class="lead">A Vontex Global cria e administra campanhas no Instagram e no Facebook com um único objetivo: colocar clientes conversando com você. A triagem do WhatsApp já vem pronta, para você atender quem realmente tem interesse.</p>
+          <div class="cta-row">
+            <a class="btn wa js-wa" href="https://wa.me/5571982440983" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+              Quero mais clientes
+            </a>
+            <a class="btn" href="#processo">Ver como funciona <span class="arr">→</span></a>
+          </div>
+        </div>
+        <ol class="funnel" aria-label="Caminho do cliente na campanha">
+          <li class="eyebrow" style="background:none;padding:0;animation:none">O caminho de cada cliente</li>
+          <li>Vê o anúncio <span>Instagram</span></li>
+          <li>Chama no WhatsApp <span>1 toque</span></li>
+          <li>Passa pela triagem <span>automática</span></li>
+          <li>Vira cliente <span>seu</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true" style="margin-top:56px">
+    <div class="track">
+      <span>Anúncios no Instagram<i>✦</i>Anúncios no Facebook<i>✦</i>Conversas no WhatsApp<i>✦</i>Triagem automática<i>✦</i>Relatório semanal<i>✦</i>Dentro das regras da OAB<i>✦</i></span>
+      <span>Anúncios no Instagram<i>✦</i>Anúncios no Facebook<i>✦</i>Conversas no WhatsApp<i>✦</i>Triagem automática<i>✦</i>Relatório semanal<i>✦</i>Dentro das regras da OAB<i>✦</i></span>
+    </div>
+  </div>
+
+  <section class="manifesto">
+    <div class="wrap">
+      <p class="eyebrow">No que a gente acredita</p>
+      <h2 style="margin-top:16px">Curtida não paga conta. <em>Conversa que vira cliente, sim.</em></h2>
+      <div class="pillars">
+        <div class="pillar"><span class="big">1 toque</span><h3>Direto para o WhatsApp</h3><p>O anúncio abre a conversa com você, sem formulário e sem página no meio do caminho.</p></div>
+        <div class="pillar"><span class="big">Filtro</span><h3>Triagem antes de você</h3><p>Mensagem automática com as perguntas certas, para você saber em segundos quem vale atender primeiro.</p></div>
+        <div class="pillar"><span class="big">Até o fim</span><h3>Medido até o contrato</h3><p>O resultado não para no custo por clique. Acompanhamos quantas conversas viraram cliente de verdade.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="para-quem">
+    <div class="wrap">
+      <div class="head">
+        <h2>Para quem é</h2>
+        <p>Para negócios em que o cliente decide pela conversa. Se a venda acontece quando alguém chama no WhatsApp, o anúncio certo enche a sua agenda.</p>
+      </div>
+      <div class="svc-list">
+        <div class="svc"><h3>Escritórios de advocacia</h3><p>Campanhas informativas por área de atuação, como trabalhista, previdenciário e família, aprovadas pelo advogado antes de ir ao ar.</p><p class="for"><b>Resultado esperado</b>consultas agendadas pelo WhatsApp</p></div>
+        <div class="svc"><h3>Clínicas e consultórios</h3><p>Anúncios por especialidade e região, com a mensagem de agendamento pronta para a recepção.</p><p class="for"><b>Resultado esperado</b>agenda preenchida</p></div>
+        <div class="svc"><h3>Lojas e comércio</h3><p>Ofertas, lançamentos e promoções para quem mora perto, com pedido e orçamento direto no WhatsApp.</p><p class="for"><b>Resultado esperado</b>pedidos e orçamentos</p></div>
+        <div class="svc"><h3>Prestadores de serviço</h3><p>Para quem vive de indicação e quer depender menos dela: anúncio na sua cidade, para o público que contrata.</p><p class="for"><b>Resultado esperado</b>pedidos de orçamento</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="advocacia" class="band">
+    <div class="wrap">
+      <div class="head">
+        <h2>Anúncio de advogado tem regra. A gente segue.</h2>
+        <p>Publicidade na advocacia é permitida, mas tem limites. Cada campanha é escrita para informar, não para captar cliente de forma indevida, e só vai ao ar com a aprovação do advogado responsável.</p>
+      </div>
+      <div class="rules">
+        <div class="rule no">
+          <h3><i aria-hidden="true">✕</i>Fica de fora</h3>
+          <ul>
+            <li>Promessa de resultado<small>"garantimos sua indenização"</small></li>
+            <li>Preço ou honorários no anúncio<small>"consulta a partir de…"</small></li>
+            <li>Chamadas de oferta<small>"consulta grátis", "só paga se ganhar"</small></li>
+            <li>Autopromoção exagerada<small>"o melhor escritório da cidade"</small></li>
+          </ul>
+        </div>
+        <div class="rule yes">
+          <h3><i aria-hidden="true">✓</i>Entra no anúncio</h3>
+          <ul>
+            <li>Conteúdo educativo<small>quais direitos a lei garante e em que prazo</small></li>
+            <li>Nome do escritório e áreas de atuação<small>com o nome do advogado e o número da OAB</small></li>
+            <li>Vídeo do advogado explicando<small>linguagem simples, tom sóbrio</small></li>
+            <li>Botão para conversar no WhatsApp<small>o contato é iniciado pelo próprio interessado</small></li>
+          </ul>
+        </div>
+      </div>
+      <div class="law">
+        <b>205/2021</b>
+        <p>O <strong>Provimento 205/2021 do Conselho Federal da OAB</strong> permite o impulsionamento de publicações pelo advogado, desde que o conteúdo seja informativo, discreto e sóbrio. É nessa linha que as campanhas são feitas. A responsabilidade ética é do advogado, por isso nada vai ao ar sem a aprovação dele.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="processo">
+    <div class="wrap">
+      <div class="head">
+        <h2>Como funciona</h2>
+        <p>A conta de anúncios fica em nome da sua empresa e a verba é paga por você diretamente à Meta, no seu cartão. A Vontex Global cuida da gestão.</p>
+      </div>
+      <ol class="steps">
+        <li><h3>Diagnóstico</h3><p>Análise do seu perfil no Instagram, do seu WhatsApp e do público que você quer atingir.</p><span class="out">Plano de campanha</span></li>
+        <li><h3>Criação</h3><p>Textos, artes e roteiros de vídeo, mais a mensagem automática de triagem do WhatsApp. Você aprova tudo.</p><span class="out">Anúncios aprovados</span></li>
+        <li><h3>No ar</h3><p>Campanha publicada na sua conta, com acesso de parceiro para a Vontex Global. A conta e o histórico continuam seus.</p><span class="out">Campanha rodando</span></li>
+        <li><h3>Ajuste</h3><p>Toda semana, o que funciona ganha mais verba e o que não funciona é trocado.</p><span class="out">Relatório semanal</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="diag">
+    <div class="wrap">
+      <div class="head">
+        <h2>O relatório mostra o que importa.</h2>
+        <p>Número bonito de alcance não diz se o anúncio deu certo. Você acompanha o caminho inteiro, do real investido ao cliente fechado.</p>
+      </div>
+      <div class="report">
+        <div class="metric"><span class="n">01</span><h3>Verba investida</h3><p>Quanto foi gasto em anúncio no período.</p></div>
+        <div class="metric"><span class="n">02</span><h3>Conversas</h3><p>Quantas pessoas chamaram no WhatsApp pelo anúncio.</p></div>
+        <div class="metric"><span class="n">03</span><h3>Custo por conversa</h3><p>Quanto custou, em média, cada contato recebido.</p></div>
+        <div class="metric"><span class="n">04</span><h3>Qualificados</h3><p>Quantos passaram pela triagem com real interesse.</p></div>
+        <div class="metric key"><span class="n">05</span><h3>Clientes fechados</h3><p>A métrica que decide se o anúncio se pagou.</p></div>
+      </div>
+      <div class="included">
+        <div>Criação dos anúncios<small>textos, artes e roteiros de vídeo</small></div>
+        <div>WhatsApp configurado<small>boas-vindas, triagem e mensagem de ausência</small></div>
+        <div>Gestão e otimização<small>ajustes semanais na campanha</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mensagem">
+    <div class="wrap">
+      <div class="head">
+        <h2>Monte sua mensagem</h2>
+        <p>Duas perguntas e a conversa começa com o essencial. O botão abre o WhatsApp com o texto pronto.</p>
+      </div>
+      <div class="quiz">
+        <form id="quiz" onsubmit="return false">
+          <fieldset class="q"><legend><span>1/2</span> Qual é o seu negócio?</legend>
+            <div class="opts">
+              <div class="opt"><input type="radio" name="neg" id="n1" value="um escritório de advocacia" checked><label for="n1">Advocacia</label></div>
+              <div class="opt"><input type="radio" name="neg" id="n2" value="uma clínica ou consultório"><label for="n2">Clínica ou consultório</label></div>
+              <div class="opt"><input type="radio" name="neg" id="n3" value="uma loja ou comércio"><label for="n3">Loja ou comércio</label></div>
+              <div class="opt"><input type="radio" name="neg" id="n4" value="uma empresa de serviços"><label for="n4">Prestação de serviços</label></div>
+            </div>
+          </fieldset>
+          <fieldset class="q"><legend><span>2/2</span> Você já anuncia?</legend>
+            <div class="opts">
+              <div class="opt"><input type="radio" name="ads" id="a1" value="nunca anunciei" checked><label for="a1">Nunca anunciei</label></div>
+              <div class="opt"><input type="radio" name="ads" id="a2" value="já impulsionei posts, mas sem resultado"><label for="a2">Já impulsionei, sem resultado</label></div>
+              <div class="opt"><input type="radio" name="ads" id="a3" value="já anuncio e quero melhorar os resultados"><label for="a3">Já anuncio e quero melhorar</label></div>
+            </div>
+          </fieldset>
+        </form>
+        <aside class="result" aria-live="polite">
+          <p class="eyebrow">Sua mensagem pronta</p>
+          <h3>Vamos conversar</h3>
+          <p class="msg" id="r-msg"></p>
+          <div class="row">
+            <a class="btn wa" id="r-wa" href="https://wa.me/5571982440983" target="_blank" rel="noopener">Enviar no WhatsApp</a>
+            <button class="btn" type="button" id="r-copy">Copiar</button>
+          </div>
+          <p class="status" id="r-status"></p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="diag">
+    <div class="wrap faq">
+      <h2>Perguntas frequentes</h2>
+      <div>
+        <details><summary>Quanto custa a gestão de tráfego?</summary><p>Um valor mensal fechado pela gestão, combinado antes de começar. A verba dos anúncios é separada e paga por você diretamente à Meta, no seu cartão, sem passar pela agência.</p></details>
+        <details><summary>Quanto preciso investir em anúncio?</summary><p>O valor é definido junto com você, de acordo com a sua cidade e o seu objetivo. O normal é começar com uma verba diária pequena, medir e só aumentar o que estiver trazendo cliente.</p></details>
+        <details><summary>A conta de anúncios fica no nome de quem?</summary><p>No nome da sua empresa. A Vontex Global entra como parceira, com acesso para administrar as campanhas. Se um dia você encerrar o serviço, a conta, as campanhas e o histórico continuam com você.</p></details>
+        <details><summary>Em quanto tempo aparecem os resultados?</summary><p>As primeiras conversas costumam chegar nos primeiros dias. As duas ou três primeiras semanas servem para testar anúncios e públicos, e é a partir daí que a campanha fica mais eficiente.</p></details>
+        <details><summary>Advogado pode anunciar no Instagram?</summary><p>Pode. O Provimento 205/2021 da OAB permite o impulsionamento de conteúdo, desde que ele seja informativo e sem promessa de resultado, preço ou captação indevida. Todo anúncio é aprovado pelo advogado antes de ser publicado.</p></details>
+        <details><summary>Preciso ter site para anunciar?</summary><p>Não. O anúncio leva direto para o seu WhatsApp. Se você quiser uma página de vendas ou um site para passar mais confiança, a Vontex Global também faz.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contact" style="padding:0">
+    <div class="wrap">
+      <h2>Vamos encher<br>o seu <span>WhatsApp?</span></h2>
+      <div class="contact-grid">
+        <p>Conte o que sua empresa faz e quem você quer atender. A resposta vem com uma ideia de campanha e os próximos passos.</p>
+        <div class="mail">
+          <p class="eyebrow">Fale com a Vontex Global</p>
+          <p class="addr">(71) 98244-0983</p>
+          <div class="row">
+            <a class="btn wa js-wa" href="https://wa.me/5571982440983" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+            <a class="btn" href="mailto:falecomdiogoreis@gmail.com?subject=Tr%C3%A1fego%20pago">Enviar e-mail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Vontex Global · Camaçari, Bahia, Brasil</span>
+    <span><a href="index.html">Sites</a> · Tráfego pago · Atendimento com IA</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var WA='5571982440983';
+  var BASE='Olá! Vi a página de tráfego pago da Vontex Global e quero saber mais sobre anúncios para o meu negócio.';
+  function link(text){return 'https://wa.me/'+WA+'?text='+encodeURIComponent(text);}
+  Array.prototype.forEach.call(document.querySelectorAll('.js-wa'),function(a){a.href=link(BASE);});
+
+  var form=document.getElementById('quiz'),msg=document.getElementById('r-msg'),wa=document.getElementById('r-wa'),
+      copyBtn=document.getElementById('r-copy'),st=document.getElementById('r-status');
+  function val(n){var el=form.querySelector('input[name="'+n+'"]:checked');return el?el.value:'';}
+  function update(){
+    var text='Olá! Vi a página de tráfego pago da Vontex Global. Tenho '+val('neg')+' e '+val('ads')+'. Quero receber mais clientes pelo WhatsApp. Podemos conversar?';
+    msg.textContent=text;
+    wa.href=link(text);
+    st.textContent='';
+  }
+  form.addEventListener('change',update);
+  update();
+
+  copyBtn.addEventListener('click',function(){
+    function fallback(){
+      try{var r=document.createRange();r.selectNodeContents(msg);var s=window.getSelection();s.removeAllRanges();s.addRange(r);}catch(e){}
+      st.textContent='Texto selecionado. Use Ctrl+C para copiar.';
+    }
+    try{
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(msg.textContent).then(function(){st.textContent='Mensagem copiada.';},fallback);}
+      else{fallback();}
+    }catch(e){fallback();}
+  });
+})();
+</script>
+</body>
+</html>
